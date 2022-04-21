@@ -1,0 +1,238 @@
+<mjml>
+  <mj-head>
+    <mj-title>Transactional Email</mj-title>
+    <mj-attributes>
+      <mj-font name="Open Sans" href="http://fonts.googleapis.com/css?family=Open+Sans"></mj-font>
+      <mj-raw>
+        <!-- padding="0" ? -->
+      </mj-raw>
+      <mj-section padding="0px"></mj-section>
+      <mj-image padding="0px"></mj-image>
+      <mj-divider padding="0px"></mj-divider>
+      <mj-class name="img-bordered" border="2px solid #eeeeee" border-radius="0px"></mj-class>
+      <mj-class name="divider-simple" border-width="1px" border-style="solid" border-color="#999999" padding-top="15px" padding="0 25px 10px 25px"></mj-class>
+      <mj-class name="divider-large" border-width="3px" border-style="solid" border-color="#eeeeee" padding-top="40px" padding-bottom="20px"></mj-class>
+      <mj-class name="section-white" background-color="#ffffff"></mj-class>
+    </mj-attributes>
+    <mj-style inline="inline">
+      html,
+      body {
+        background-color: lightgrey;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      a {
+        color: #333333;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body width="650px">
+    <mj-raw>
+      <!-- Logo -->
+    </mj-raw>
+    <mj-section background-color="#f9f9f9">
+      <mj-column>
+        <mj-image src="https://transactional-email.s3.us-west-2.amazonaws.com/rewards-logo-top.png" alt="Shop rewards" width="600px"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- Hi and Thanks -->
+    </mj-raw>
+    <mj-section mj-class="section-white" padding-top="30px">
+      <mj-column>
+        <mj-text>Hi Alex,<br /> Thanks for your recent order. Please find all the details below.<br /> If you have any questions, feel free to <a href="mailto:contact@clothes-men.mailjet.com">contact us</a>.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- Divider -->
+    </mj-raw>
+    <mj-section mj-class="section-white">
+      <mj-column>
+        <mj-divider mj-class="divider-simple"></mj-divider>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- Order number -->
+    </mj-raw>
+    <mj-section mj-class="section-white">
+      <mj-column>
+        <mj-text><strong>Order number: 123456789</strong></mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- Billing and Shipping addresses -->
+    </mj-raw>
+    <mj-section mj-class="section-white">
+      <mj-column>
+        <mj-text>Billing Address<br />
+          Alex Tegga<br />
+          7127 Money Flow Road<br />
+          Seattle,&nbsp; WA&nbsp; 98071
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text>Billing Address<br />
+          Alex Tegga<br />
+          7127 Money Flow Road<br />
+          Seattle,&nbsp; WA&nbsp; 98071
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- Divider -->
+    </mj-raw>
+    <mj-section mj-class="section-white">
+      <mj-column>
+        <mj-divider mj-class="divider-simple"></mj-divider>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- Items -->
+    </mj-raw>
+    <mj-section mj-class="section-white">
+      <mj-raw>
+        <!-- Image -->
+      </mj-raw>
+      <mj-column vertical-align="middle" width="30%">
+        <mj-image padding="25px" align="left" src="https://promotional-email.s3.us-west-2.amazonaws.com/product1.png" alt="{{ item.title }}" width="150px"></mj-image>
+      </mj-column>
+      <mj-raw>
+        <!-- Data -->
+      </mj-raw>
+      <mj-group vertical-align="middle" width="70%">
+        <mj-column>
+          <mj-text align="left"><strong>Tire Boot</strong><br /> Size: 10<br /> Quantity: 1</mj-text>
+        </mj-column>
+        <mj-raw>
+          <!-- Price -->
+        </mj-raw>
+        <mj-column>
+          <mj-text align="right"><strong>Price: $1200</strong></mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-raw>
+      <!-- Divider -->
+    </mj-raw>
+    <mj-section mj-class="section-white">
+      <mj-column>
+        <mj-divider mj-class="divider-simple"></mj-divider>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- Delivery date and Total amount -->
+    </mj-raw>
+    <mj-section mj-class="section-white">
+      <mj-column width="66%">
+        <mj-text>Your estimated delivery date:<br />
+          July 12, 2019
+        </mj-text>
+      </mj-column>
+      <mj-column width="34%">
+        <mj-text align="right">Shipping: $0<br /> Tax: $15.14<br /> Total: 1215.14</mj-text>
+        <mj-text align="right"><a href="#View_Online_Receipt" target="_blank">View Online Receipt</a></mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- You will love that Divider -->
+    </mj-raw>
+    <mj-section mj-class="section-white" padding-top="30px">
+      <mj-column width="25%">
+        <mj-divider mj-class="divider-simple"></mj-divider>
+      </mj-column>
+      <mj-column width="50%">
+        <mj-text font-size="20px" padding="0px" align="center" color="#999999"><span style="letter-spacing:3px">LIMITED COLLECTION</span></mj-text>
+      </mj-column>
+      <mj-column width="25%">
+        <mj-divider mj-class="divider-simple"></mj-divider>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- Suggestions -->
+    </mj-raw>
+    <mj-section mj-class="section-white" padding-top="30px">
+      <mj-raw>
+        <!-- Careful with the number of suggestions! -->
+      </mj-raw>
+      <mj-column>
+        <mj-image padding="20px" mj-class="img-bordered" src="https://transactional-email.s3.us-west-2.amazonaws.com/new.png" href="{{ suggestion.link }}" alt="{{ suggestion.title }}"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- Footer Divider -->
+    </mj-raw>
+    </mj-section>
+    <mj-raw>
+      <!-- Footer -->
+    </mj-raw>
+    <!-- ########### -->
+    <mj-section background-color="#2E967D">
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="16px" align="center" text-transform="uppercase" font-weight="bold" letter-spacing="2px">Get the app *</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#2E967D">
+      <mj-group>
+        <mj-column>
+          <mj-image alt="bottegaveneta facebook" href="https://www.bottegaveneta.com/en-us" width="100px" src="https://transactional-email.s3.us-west-2.amazonaws.com/appstore-en.png"></mj-image>
+        </mj-column>
+        <mj-column>
+          <mj-image alt="bottegaveneta instagram" href="https://www.bottegaveneta.com/en-us" width="100px" src="https://transactional-email.s3.us-west-2.amazonaws.com/googleplay-en.png"></mj-image>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section padding="10px 45px" background-color="#2E967D">
+      <mj-group>
+        <mj-column width="27%">
+          <mj-text padding="7px 0" text-transform="uppercase" font-family="Open Sans, Arial, sans-serif" font-size="12px" text-decoration="none" align="center"><a href="https://www.bottegaveneta.com/en-us" style="text-decoration:none; color:#111111" class="apple-link-black"><strong>live chat</strong></a></mj-text>
+        </mj-column>
+        <mj-column width="46%">
+          <mj-text padding="7px 0" text-transform="uppercase" font-family="Open Sans, Arial, sans-serif" font-size="11px" text-decoration="none" align="center"><a href="" style="text-decoration:none; color:#111111" class="apple-link-black"><strong>call us</strong>
+              <br />
+              1 (555) 712-1954
+            </a></mj-text>
+        </mj-column>
+        <mj-column width="27%">
+          <mj-text padding="7px 0" text-transform="uppercase" font-family="Open Sans, Arial, sans-serif" font-size="12px" text-decoration="none" align="center"><a href="https://www.bottegaveneta.com/en-us" style="text-decoration:none; color:#111111;" class="apple-link-black"><strong>email us</strong></a>
+            <br />
+            <br />
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section padding="0px" background-color="#2E967D">
+      <mj-column>
+        <mj-text mj-class="footer-text" align="center" padding="0 10px">
+          <p style="Margin:0; padding-bottom:10px; font-size:10px; line-height:15px; Margin-bottom:10px; color:#111111; font-family: 'Open Sans', 'Raleway', Arial, Helvetica, sans-serif;">We only send emails to individuals who have registered at our site:
+            <a href="https://www.bottegaveneta.com/en-us" name="footer_bottegavenetahomepage" style="color:#111111; text-decoration:underline;">www.bottegaveneta.com</a>
+          </p>
+          <p align="left" style="Margin:0; padding-bottom:10px; font-size:10px; line-height:15px; Margin-bottom:10px; color:#111111; font-family: 'Open Sans', 'Raleway', Arial, Helvetica, sans-serif;">*BOTTEGA has a 28 day returns policy so this estimated returns date has been calculated as 28 days from your expected delivery date. If you return within 28 days of receiving your order, you’ll be refunded via your original payment method. For more details on returns and refunds see website for full Ts&Cs.
+            <br />
+            <br />
+            This inbox is not attended so please don’t reply to this email. This is a service email. You will receive these no matter what your marketing communication preferences are.
+            <br />
+            <br />
+            We’ll always keep your data safe and secure. Click here to know why we need it and how we use it.
+          </p>
+          <p style="Margin:0; padding-bottom:10px; font-size:10px; line-height:15px; Margin-bottom:10px; color:#111111; font-family: 'Open Sans', 'Raleway', Arial, Helvetica, sans-serif;">
+            <span style="color:#111111 !important; text-decoration:none;">
+              <strong>1.555.217.1954</strong>
+              <br /> 123 South Tegga Street, Cotoure, NY 11221
+            </span>
+            <br />
+            <a href="https://www.bottegaveneta.com/en-us" name="footer_privacy" style="color:#111111; text-decoration:underline;">
+              <strong>Privacy Policy</strong>
+            </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="https://www.bottegaveneta.com/en-us" style="text-decoration:underline; color:#111111;">
+              <strong>Unsubscribe</strong>
+            </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="https://email.bottegaveneta.com/pub/sf/ResponseForm?_ri_=X0Gzc2X%3DYQpglLjHJlTQGjmR9kDzfwzbMzackp9f3F8d45ze2zfbW8hYB6AzgB7gaIYB3tN5qwvasVXMtX%3DYQpglLjHJlTQGNXlMNF3fFUYHWCzdBj2rGzgJpzem2KonGoezgzbfUyABevzgl4CepTMC&_ei_=EolaGGF4SNMvxFF7KucKuWP7XpARYKtbBY43fLBYxvXNpGx2Z89j4M" style="text-decoration:underline; color:#111111;">View in Browser</a>
+          </p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- ########### -->
+    <mj-section background-color="#2E967D" padding-bottom="30px">
+  </mj-body>
+</mjml>
